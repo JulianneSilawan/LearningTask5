@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Main{
+abstract class Main extends Result {
 
     public static void main(String[] args) {
         // Frame and Panel
@@ -84,12 +84,7 @@ public class Main{
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
-    public static int computeValue(String value1, String value2){
-        int val1 = Integer.parseInt(value1);
-        int val2 = Integer.parseInt(value2);
-        int sum = val1 - val2;
-        return sum;
-    }
+
     public static void displayMessage(String message){
         JOptionPane.showMessageDialog( null, message, "YEAR OF BIRTH" , JOptionPane.INFORMATION_MESSAGE );
     }
